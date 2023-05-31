@@ -5,69 +5,64 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
     <body>
-        <!-- this section contains the navigation bar -->
+        <nav class="head-box">
+            <img src="logo.png" class="logo-box"/>
+            <span class = "heading-3">Helping Hands</span>
+        </nav>
+
+        <!-- login box -->
         <section>
-        </section>
-        <!-- this section contains the top section of hero page -->
-        <section>
-            <div class="main-container">
+            <div class="login-box">
+                <p class="heading-3 welcome">Welcome to Helping Hands!</p>
                 <div>
-                    <p class="heading-1">Explore the joy of learning and sharing knowledge 
-                        in a community-driven ecosystem.</p>
-                    <p class="Body-1">Join a community that celebrates the exchange of knowledge, fostering
-                        growth and inspiration among individuals worldwide.</p>
-                    <div class="help-buttons">
-                        <button class="seek-help-button seek-help-button-text btn">Seek Help</button>
-                        <button class="provide-help-box provide-help-box-text btn">Provide Help</button>
+                    <p class="heading-4">Log in</p>
+                <form action="#">
+                    <div class="entry-buttons">
+                        <span class="body-2">Email address</span>
+                        <input type="email" required class="button-size">
                     </div>
-                    <div class="stats">
-                        <div class="stat-info">
-                            <p class="heading-3 stat-info-1">13k+</p>
-                            <p class="Body-1 grey stat-info-2">Members</p>
+                    <div class="entry-buttons">
+                        <div class="password">
+                            <span class="body-2">Your password</span>
+                            <div class="hide">
+                                <span class="icon"><ion-icon name="eye-off"></ion-icon></span>
+                                <span class="body-2">Hide</span>
+                            </div>
+                            
                         </div>
-                        <div class="stat-info">
-                            <p class="heading-3 stat-info-1">8k+</p>
-                            <p class="Body-1 grey stat-info-2">Problems</p>
-                        </div>
-                        <div class="stat-info">
-                            <p class="heading-3 stat-info-1">5k+</p>
-                            <p class="Body-1 grey stat-info-2">Mentors</p>
-                        </div>
+                        <input type="password" required class="button-size">
                     </div>
-                </div>
-                <div class="image-box">
-                    <img src="sideimg.png" class="main-image"/>
+                    <div class="forgot-password">
+                        <a href="#" class="body-2 blue">Forgot your password</a>
+                    </div>
+                    
+                    <div class="login-acc">
+                        <button class="log-in-button">Log in</button>
+                        <div class="body-2">
+                            <span>Don't you have an account?</span>
+                            <a href="#" class="blue">Sign up</a>
+                        </div>    
+                    </div>
+                    <div class="or-line">
+                        <hr class="hr-line">
+                        <span>OR</span>
+                        <hr class="hr-line">
+                    </div>
+                    <div>
+                        
+                        <button class="google-signup body-1"><span><ion-icon name="logo-google"></ion-icon></span><span>Continue with Google</span></button>
+                    </div>
+                </form>
                 </div>
             </div>
         </section>
-        <!--this secction contains eth and karma points info-->
-        <section >
-            <div class="home-eth-box">
-                <div class="karmaimage">
-                    <img src="etherum2.png" alt="" srcset="">
-                </div>
-                <div class="eth-info">
-                    <h3 class="heading-2 home-eth-heading">Donate or Gain Ethereum</h3>
-                    <p class="Body-1 home-eth-para">By helping others in the community you can earn and donate ethereum.Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code, called smart contracts. Smart contracts allow participants to transact with each other without a trusted central authority.</p>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         
-                    <button class="Get-Started-button btn">Get started</button>
-                </div>
-            </div>
-    
-            <div class="home-eth-box">
-                <div class="eth-info2">
-                    <h3 class="heading-2 home-eth-heading">Earn & Use Karma Points</h3>
-                    <p class="Body-1 home-eth-para">Volunteering your time to support a cause you are passionate about is something you will never regret. One of the most exciting uses of Ethereum is for payments and remittances as it allows for sending money globally without transaction fees</p>
         
-                    <button class="Get-Started-button btn">Get started</button>
-                </div>
-                <div class="eth-image">
-                    <img src="karma.png" alt="">
-                </div>
-            </div>
-        </section> 
     </body>
 </html>

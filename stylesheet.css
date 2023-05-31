@@ -1,28 +1,26 @@
-body{
-    margin-left: 96px;
+.body{
+    margin-left:96px;
     margin-right: 96px;
 }
-.flex{
-    display:flex;
+.head-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 96px;
+    gap: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: absolute;
+    width: 1920px;
+    height: 84px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 }
-.grey{
-    color: #575757;
-}
-.heading-1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    text-transform: capitalize;
-    color: #000000;
-}
-.heading-2{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+.logo-box{
+    margin-right:0px;
+    padding-right:0px;
 }
 .heading-3{
     font-family: 'Inter';
@@ -32,167 +30,158 @@ body{
     line-height: 36px;
     text-transform: capitalize;
     color: #000000;
+    margin-left: 0px;
+    padding-left: 0px;
 }
-.Body-1{
+.heading-4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #000000;
+}
+.body-1{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+    /* identical to box height, or 140% */
+
+    letter-spacing: 0.02em;
+}
+.body-2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+.blue{
+    color: #1A98FF;
 }
 
-/*top main section*/
+.welcome{
+   margin-top: 0px;
+   padding-top: 0px;
+}
 
-.main-container{
+.login-box{
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
-    gap: 100px;
-    margin-top: 111px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 42px;
+
+    position: absolute;
+    width: 600px;
+    height: 764px;
+    left: calc(50% - 600px/2);
+    top: 172px;
+
+    background: #FFFFFF;
+    /* Border/Card Line */
+
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
 }
-.help-buttons{
+.entry-buttons{
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+    width: 500px;
+    margin-top: 30px;
+}
+.button-size{
+    width: 500px;
+    height: 52px;
+
+    /* Border/Card Line */
+
+    border: 0.8px solid #C4C4C4;
+    border-radius: 12px;
+
+}
+.password{
+    display: flex;
+    justify-content: space-around;
+    gap:320px; 
+}
+.hide{
+    display:flex;
+    align-items: center;
+    gap: 2px;
+}
+.forgot-password{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.login-acc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.log-in-button{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 28px;
-    width: 476px;
-    height: 60px;
-    margin-top: 44px;
-
-}
-.seek-help-button{
-    
+    justify-content: center;
     align-items: center;
     padding: 16px 50px;
     gap: 10px;
-    width: 224px;
-    height: 60px;
+    width: 259px;
+    background: #000000;
     border-radius: 8px;
 
-    background-color: white;
-    border: 2px solid;
-
-    border-color: blueviolet;
-}
-
-.seek-help-button-text{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
-    background: linear-gradient(90deg, #4776E6 0.51%, #8E54E9 100.51%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-.provide-help-box{
-    align-items: center;
-    padding: 16px 45px;
-    gap: 10px;
-    width: 224px;
-    height: 60px;
-    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
-    border-radius: 8px;
-    border: none;
-}
-.provide-help-box-text{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    /* identical to box height, or 140% */
     color: #FFFFFF;
 }
-.stats{
-    width: 337px;
-    height: 68px;
-    display: flex;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-    margin-top: 58px;
-}
-.stat-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 2px;
-    width: 89px;
-    height: 68px;
-}
-
-.stat-info-1{
-    margin-bottom: 0px;
-    padding: 0px;
-}
-
-.stat-info-2{
-    margin-top: 0px;
-    padding: 0px;
-    gap: 10px;
-}
-
-.image-box{
-    height: 450px;
-    width: auto;
-}
-.main-image{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-
-
-.home-eth-box{
-    display:flex;
-    justify-content: space-between;
-    margin-top: 100px;
-}
-.eth-image{
-    
-    width: 50vb;
-    height: 419px;
-    margin-right: 168px;
-
-    background: #D9D9D9;
-    border-radius: 20px;
-
-}
-
-.eth-info{
-    padding: 50px;
-}
-
-.Get-Started-button{
+.or-line{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 70px;
-    gap: 10px;
-    width: 258px;
-    height: 60px;
-    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
-    border-radius: 8px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    color: #FFFFFF;
+    align-items: center;
+}
+.hr-line{
+    width: 215.5px;
+    height: 2px;
 
-    margin-top: 58px;
-}
-.home-eth-para{
-    margin-top: 18px;
-    
-}
-.home-eth-heading{
-    margin-bottom: 0px;
+    background: rgba(102, 102, 102, 0.25);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
+.google-signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    width: 500px;
+    height: 64px;
+
+    background: #FFFFFF;
+    /* Text  Color/Black */
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+    margin-top: 35px;
+
+}
